@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenIddict" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lyd.Shared\Lyd.Shared.csproj" />
+    <ProjectReference Include="..\Openiddict.Domain\Openiddict.Domain.csproj" />
+    <ProjectReference Include="..\Openiddict.Infrastructure\Openiddict.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
